@@ -27,7 +27,7 @@ variable "ami_id" {
     default     = "ami-007855ac798b5175e"
 }
 variable "versioning" {
-    type        = boolami-00c39f71452c08778rsioning."
+    type        = bool
     default     = true
 }
 variable "acl" {
