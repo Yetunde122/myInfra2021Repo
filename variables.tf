@@ -5,7 +5,7 @@ variable "aws_region" {
 
 variable "key_name" { 
     description = " SSH keys to connect to ec2 instance" 
-    default     =  "Mac.pem" 
+    default     =  "Yetunde.pem" 
 }
 
 variable "instance_type" { 
@@ -24,11 +24,10 @@ variable "tag_name" {
 } 
 variable "ami_id" { 
     description = "AMI for Ec2 instance" 
-    default     = "ami-0557a15b87f6559cf"
+    default     = "ami-00c39f71452c08778"
 }
 variable "versioning" {
-    type        = bool
-    description = "(Optional) A state of versioning."
+    type        = boolami-00c39f71452c08778rsioning."
     default     = true
 }
 variable "acl" {
