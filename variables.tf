@@ -26,10 +26,6 @@ variable "ami_id" {
     description = "AMI for Ec2 instance" 
     default     = "ami-007855ac798b5175e"
 }
-variable "aws_vpc" { 
-    description = "vpc created" 
-    default     = "ami-007855ac798b5175e"
-}
 variable "versioning" {
     type        = bool
     default     = true
