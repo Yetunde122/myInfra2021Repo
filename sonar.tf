@@ -1,5 +1,5 @@
 resource "aws_instance" "mySonarInstance" {
-      ami           = "ami-0557a15b87f6559cf"
+      ami           = "ami-007855ac798b5175e"
       key_name = var.key_name
       instance_type = "t2.micro"
       #vpc_id = data.aws_vpc.selected.id
