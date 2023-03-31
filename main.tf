@@ -9,8 +9,8 @@ provider "aws" {
 #     Name = "main"
 #   }
 # }
-data "aws_vpc" "selected" {
-  id = "vpc-043007f00a536bcbf"
+data "Devops-vpc" "selected" {
+  id = "vpc-0148f55bb2e91d476"
 }	
             
 
