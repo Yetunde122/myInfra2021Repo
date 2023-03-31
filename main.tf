@@ -9,9 +9,9 @@ provider "aws" {
 #     Name = "main"
 #   }
 # }
-data "Devops-vpc" "selected" {
-  id = "vpc-0148f55bb2e91d476"
-}	
+data "aws_vpc" "selected" {
+  id = "vpc-043007f00a536bcbf"
+}
             
 
 #Create security group with firewall rules
