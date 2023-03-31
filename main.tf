@@ -53,7 +53,7 @@ resource "aws_instance" "myFirstInstance" {
   key_name = var.key_name
   instance_type = var.instance_type
   #vpc_id = data.aws_vpc.selected.id
-  vpc_security_group_ids = [aws_security_group.jenkins-sg-2022.id]
+  vpc_security_group_ids = ["vpc-0148f55bb2e91d476"]
   tags= {
     Name = var.tag_name
   }
