@@ -17,8 +17,8 @@ resource "aws_instance" "mySonarInstance" {
  resource "aws_security_group" "sonar-sg-2022" {
       name        = "security_sonar_group_2022"
       description = "security group for Sonar"
-       vpc_id = "vpc-0148f55bb2e91d476"
-       #vpc_id = aws_vpc.main.id
+       #vpc_id = "vpc-0148f55bb2e91d476"
+       vpc_id = aws_vpc.main.id
        #vpc_id = [data.aws_vpc.main.id]
        #vpc_id = data.aws_vpc.selected.id
 
