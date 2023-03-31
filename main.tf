@@ -2,16 +2,17 @@ provider "aws" {
   region = var.aws_region
 }
 
-# resource "aws_vpc" "main" {
-#   cidr_block = "172.16.0.0/16"
-#   instance_tenancy = "default"
-#   tags = {
-#     Name = "main"
-#   }
-# }
-data "aws_vpc" "selected" {
-  id = "vpc-043007f00a536bcbf"
+resource "aws_vpc" "main" {
+   cidr_block = "172.16.0.0/16"
+   instance_tenancy = "default"
+    tags = {
+    Name = "main"
+   }
 }
+
+#data "aws_vpc" "selected" {
+#id = "vpc-043007f00a536bcbf"
+#}
             
 
 #Create security group with firewall rules
